@@ -1,0 +1,35 @@
+.discovery{
+    background-image: url(/img/section/back.avif);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    padding-top: 130px;
+    color: #fff;
+    &__container{
+        @include d-flex(column, center, center, 0, 100px);
+        text-align: center;
+        h4{
+            @include h-property(24px)
+        }
+        h1{
+            @include h-property(100px, 100px);
+        }
+        h5{
+            @include h-property(18px);
+        }
+    }
+}
+.boxes{
+    margin-top: 100px;
+    &__container{
+        @include d-flex(row, flex-start, center, wrap, 10px);
+    }
+    &__box{
+        @include d-flex(column, 0, 0, 0, 10px)
+    }
+    span{
+        &::before{
+            content: "$";
+        }
+    }
+}

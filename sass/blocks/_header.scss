@@ -1,0 +1,29 @@
+.header{
+    background-color: rgb(31, 13, 13);
+    backdrop-filter: blur(10px);
+    padding: 30px 0;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    &__title{
+        cursor: pointer;
+    }
+    &__container{
+        @include d-flex(row, space-between, center);
+    }
+    a{
+        @include h-property();
+        color: #fff;
+        &:hover{
+            border-bottom: 1px solid white;
+        }
+    }
+    &__list{
+        @include d-flex();
+    }
+    &__shoping{
+        &::after{
+            content: "(0)";
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.footer {
+    margin-top: 100px;
+    background-color: rgb(31, 13, 13);
+    @include d-flex(row, space-between, flex-start, 0, 0);
+    color: #fff;
+    padding: 50px 0;
+    h3{
+        @include h-property(30px, 40px)
+    }
+    a{
+        color: #fff;
+    }
+    &__naviqation{
+        @include d-flex(column, space-between, 0, 0, 20px);
+        &--item{
+            @include d-flex(column, 0, 0, 0, 10px);
+        }
+        &--container{
+            @include d-flex(row, 0, 0, 0, 100px);
+        }
+    }
+    &__items{
+        @include d-flex(column, 0, 0, 0, 100px)
+    }
+    &__block{
+        @include d-flex(column, space-between);
+    }
+    &__img{
+        @include d-flex(row, center, center, 0, 30px);
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,66 @@
+@media only screen and (max-width: 1199px){
+    .container{
+        max-width: 900px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container{
+        max-width: 700px;
+        width: 100%;
+    }
+    .header{
+        padding: 10px 20px;
+        img{
+            display: block;
+            cursor: pointer;
+        }
+        &__home{
+            display: none;
+        }
+    }
+    .boxes{
+        &__box{
+            width: 100%;
+        }
+    }
+    .discovery{
+        &__container{
+            h4{
+                @include h-property(14px)
+            }
+            h1{
+                @include h-property(40px, 40px);
+            }
+            h5{
+                @include h-property(18px);
+            }
+        }
+    }
+    .footer{
+        // .container{
+        //     margin-left: 140px;
+        // }
+        @include d-flex(column, flex-start, flex-start);
+        &__naviqation{
+            &--container{
+                @include d-flex(column, 0, 0, 0, 100px);
+            }
+        }
+        h3{
+            @include h-property(18px, 40px)
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .container{
+        max-width: 600px;
+    }
+    .boxes{
+        img{
+            width: 100%;
+        }
+    }
+}
